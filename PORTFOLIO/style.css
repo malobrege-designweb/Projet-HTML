@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(70, 70, 164);
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header  */
+
+.header-accueil {
+    height: 60vh;
+    width: 100vw;
+    background-image:url(img/background.png);
+}
+
+.header-contact {
+    height: 30vh;
+    width: 100vw;
+    background-image:url(img/background.png);
+}
+
+main {
+    overflow-x: hidden;
+    min-height: calc(75vh - 60vh + - 15vh);
+}
+
+.main{
+    margin-top: 5%;
+    margin-left: 37%;
+    text-align: justify;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+    background-color: #f0c55c;
+    border-radius: 2em;
+    width: 25vw;
+    padding: 1em;
+}
+
+/* Footer  */
+
+.footer {
+    height: 15vh;
+    width: 100vw;
+    background-color:rgb(106, 106, 248);
+}
+
+/* Navigation */
+
+.logo {
+    width: 5vw;
+    border-radius: 100%;
+}
+
+.header-accueil .navbar{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    gap: 3em;
+}
+
+.header-contact .navbar{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    gap: 3em;
+}
+
+.footer .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    gap: 3em;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dropdown a {
+    height: auto;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    gap: 3em;
+}
+
+.dropdown {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    height: 0;
+    overflow: hidden;
+    transition: 8s;
+}
+
+.showdropdown {
+    transition: 1s;
+    height: 6em;
+}
+
+/* Titre */
+
+.iim {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    margin-top: 1em;
+    color: white;
+}
+
+.main-title h1 {
+    font-family: serif;
+    font-size: 4em;
+    color: white;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.etd {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    margin-top: 1em;
+    color: rgb(75, 73, 73);
+}
+
+/* Slider 1*/
+
+.slider-1 {
+  width: 27.5vw;
+  height: 53vh;
+  margin: 1em auto;
+  overflow: hidden;
+  border: 0.5em solid #f1f1f1;
+  margin-top: 5%;
+}
+
+.slider-1 .slider {
+  animation: slider-1 12s infinite ease-in-out;
+  display: flex;
+  /* Si on veut faire glisser vers la droite */
+  /* Il faut aussi changer l'animation(transform) en valeurs positives */
+  /* flex-direction: row-reverse; */
+}
+
+/* 
+   5% par transition, nombre choisi arbitrairement.
+
+   reste divisé par nb de pauses
+   80(%) / 4 = 20(%) par pause
+*/
+
+@keyframes slider-1 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+} 
+
+/* Slider 2*/
+
+.slider-2 {
+  max-width: 528px;
+  max-height: 600px;
+  margin: 10em auto;
+  overflow: hidden;
+  border: 0.5em solid #f1f1f1;
+}
+
+.slider-2 .slider {
+  animation: slider-1 12s infinite ease-in-out;
+  display: flex;
+  /* Si on veut faire glisser vers la droite */
+  /* Il faut aussi changer l'animation(transform) en valeurs positives */
+  /* flex-direction: row-reverse; */
+}
+
+/* 
+   5% par transition, nombre choisi arbitrairement.
+
+   reste divisé par nb de pauses
+   80(%) / 4 = 20(%) par pause
+*/
+
+@keyframes slider-2 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+} 
+
+/* A propos de moi */
+
+.moireseau {
+    display: flex;
+}
+
+.moi {
+    background-color: #f0c55c;
+    border-radius: 2em;
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+    margin-left: 10%;
+    text-align: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: justify;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold lighter;
+    padding-bottom: 3em;
+    padding-top: 2em;
+    color: white;
+    word-spacing: 0.1em;
+    line-height: 170%;
+}
+
+.moi h1 {
+    margin-bottom: 5%;
+}
+
+/* Resaux Sociaux */
+
+.reseau {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.reseau h1 {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+    background-color: #f0c55c;
+    border-radius: 2em;
+    width: 25vw;
+    padding: 1em;
+}
+
+.reseau a .img123 {
+    margin-top: 10%;
+    margin-left: 3%;
+    height: 10vh;
+    width: 5vw;
+    margin-right: 10%;  
+}
+
+.reseau a .img45 {
+    margin-top: 10%;
+    margin-left: 12%;
+    height: 7vh;
+    width: 6vw;
+    margin-right: 10%;
+}
+
+/* Competences */
+
+.compcvconta {
+    display: flex;
+}
+
+.competences {
+   background-color: #f0c55c;
+    border-radius: 2em;
+    width: 32%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+    margin-left: 10%;
+    text-align: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: justify;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold lighter;
+    padding-bottom: 3em;
+    padding-top: 2em;
+    color: white;
+    word-spacing: 0.1em;
+    line-height: 170%;
+}
+
+.competences h1 {
+    margin-bottom: 5%;
+}
+
+.competences h2 {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+/* CV et Contact  */
+
+.cvcontact {
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+.cvcontact .button {
+    height: 9vh;
+    width: 11vw;
+    border-radius: 0.5em;
+    border: 0.5em solid #3165a7;
+    background-color: #fbdda7;
+    cursor: pointer;
+    transition: transform 0.5s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    color: black;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    margin-right: 4em;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background-color: #ff8036;
+}
+    
+
+/* Contact */
+
+.explications {
+    background-color: #f0c55c;
+    border-radius: 2em;
+    width: 30%;
+    margin-top: 3%;
+    font-size: 1.2em;
+    margin-left: 37.5%;
+    text-align: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: justify;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    padding-bottom: 3em;
+    padding-top: 2em;
+    color: white;
+}
+
+.explications h1{
+    margin-bottom: 6%;
+}
+
+form {
+    background-color: #f0c55c;
+    padding: 5em;
+    border-radius: 2em;
+    margin-left: 27.5%;
+    margin-bottom: 10em;
+    width: 50%;
+    color: white;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 1.2em;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+}
+
+form h1 {
+    font-size: 2em;
+} 
+
+form .separation {
+    width: 100%;
+    height: 0.5em;
+    background-color: #e76539;
+    padding: 0.15em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+form .main-formulaire {
+    display: flex;
+    margin-bottom: 15%;
+}
+
+form .main-formulaire .gauche {
+    width: 50%;
+}
+
+form .main-formulaire .groupe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+form .main-formulaire .gauche .groupe input {
+    margin-top: 3%;
+    padding: 1em 0.5em 1em 3em;
+    border: 0.5em solid #8da0be;
+    outline-color:#e76539;
+    border-radius: 1em;
+}
+
+form .main-formulaire .gauche .groupe i{
+    position: absolute;
+    left: 0;
+    top: 2.5em;
+    padding: 0.25em 1em;
+    color: #3367a9;
+}
+
+form .main-formulaire .droite{
+    margin-left: 5em;
+}
+
+form .main-formulaire .droite.groupe{
+    height: 100%;
+}
+
+textarea {
+    resize: none;
+    margin-top: 0.75em;
+    padding: 1em;
+    border: 0.5em solid #8da0be;
+    outline: none;
+    height: 77%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#submit-button {
+    margin-left: 25%;
+    height: 4vh;
+    width: 8vw;
+    border-radius: 0.5em;
+    border: 0.5em solid #3165a7;
+    background-color: #fbdda7;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#submit-button:hover{
+  transform: scale(1.05);
+  background-color: #ff8036;
+}
+
+.type-input {
+    width: 25em;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    letter-spacing: normal;
+    font-size: 1em;
+    border-radius: 10%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.success {
+    color: #a7fab0;
+    font-weight: bold;
+    letter-spacing: normal;
+    font-size: 1em;
+    border-radius: 10%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.type-input.input-error {
+    border: 2px solid red !important;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

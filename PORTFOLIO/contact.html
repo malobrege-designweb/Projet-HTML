@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage UTF-8 pour supporter les caractères français -->
+    <meta name="Mes Contacts" content="Voici mes Contacts"> <!-- Meta description -->
+    <title>Contact</title> <!-- Titre de la page qui apparaît dans l’onglet -->
+    
+    <!-- Icone Font Awesome pour les icônes dans le formulaire -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- Police Noto Sans depuis Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers le fichier CSS local -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation de la page contact -->
+    <header class="header-contact">
+        <nav class="navbar">
+            <a href="main_page.html">Accueil</a> <!-- Lien vers la page d’accueil -->
+            <img class="logo" src="img/logo.avif" alt="logo"> <!-- Logo du site -->
+            <a href="contact.html">Contact</a> <!-- Lien vers la page contact (courante) -->
+        </nav>
+
+        <!-- Menu déroulant -->
+        <nav class="dropdown">
+                <ul>
+                    <li><a href="main_page.html">Portfolio</a></li> <!-- Lien vers portfolio -->
+                    <li><a href="contact.html">Formulaire</a></li> <!-- Lien vers formulaire -->
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Explications sur le formulaire -->
+        <div class="explications">
+            <h1>Explications</h1>
+            <p>Ici vous pouvez déposer votre avis que je le lirai avec joie. N'hésitez pas à mentionner 
+                les problèmes que vous avez rencontrés durent cette visite de mon portfolio et à me 
+                poser des questions si cela vous chante. Je reste disponible et je vous répondrai dès 
+                que possible. A très bientôt, Malo BREGE.</p>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <form action="">
+            <h1>Contactez-moi</h1> <!-- Titre du formulaire -->
+            <div class="separation"></div> <!-- Ligne de séparation -->
+            <div class="main-formulaire"> <!-- Conteneur principal du formulaire -->
+
+                <!-- Colonne gauche : nom, email, téléphone -->
+                <div class="gauche">
+
+                    <!-- Nom -->
+                    <div class="groupe">
+                        <label for="name">Nom et Prenom:</label>
+                        <input id="name" class="type-input" type=text placeholder="Exemple : Baptiste" autocomplete="off">
+                        <i class="fa-solid fa-user"></i> <!-- Icône utilisateur -->
+                        <p id="name-error" class="error hidden">La case ne doit pas être vide !!!</p> <!-- Message d'erreur -->
+                    </div>
+
+                    <!-- Email -->
+                    <div class="groupe">
+                        <label for="email">Adresse Mail :</label>
+                        <input id="email" class="type-input" type="email" placeholder="Exemple : hugomalonoah@gmail.com" autocomplete="off">
+                        <i class="fa-solid fa-envelope"></i> <!-- Icône enveloppe -->
+                        <p id="email-error" class="error hidden">La case ne doit pas être vide !!!</p>
+                    </div>
+
+                    <!-- Téléphone -->
+                    <div class="groupe">
+                        <label for="tel">Numero de Telephone</label>
+                        <input id="tel" class="type-input" type="text" placeholder="Exemple : 00 00 00 00 00" autocomplete="off">
+                        <i class="fa-solid fa-mobile"></i> <!-- Icône téléphone -->
+                        <p id="tel-error" class="error hidden">La case ne doit pas être vide !!!</p>
+                    </div>
+                </div>
+
+                <!-- Colonne droite : message et bouton envoyer -->
+                <div class="droite">
+                        <div class="groupe">
+                            <label for="message">Message :</label>
+                            <textarea id="message" class="type-input" placeholder="Saisissez votre message ..." autocomplete="off"></textarea>
+                            <input id="submit-button" type="submit" class="button" value="Envoyer le Message"> <!-- Bouton d'envoi -->
+                            <p id="send-success" class="success hidden">Message envoyé avec succès</p> <!-- Message de succès -->
+                            <p id="message-error" class="error hidden">Le Message ne doit pas être vide</p> <!-- Message d'erreur -->
+                        </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="navbar">
+            <a href="main_page.html">Accueil</a>
+            <img class="logo" src="img/logo.avif" alt="logo">
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+    <!-- Lien vers le fichier JS pour validation et interactivité -->
+    <script src="contact.js"></script>
+
+</body>
+</html>

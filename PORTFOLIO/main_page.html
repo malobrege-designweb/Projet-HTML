@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage UTF-8 pour supporter les caractères français -->
+    <meta name="Mon Portfolio" content="Voici mon Portfolio"> <!-- Meta description de la page -->
+    <title>Portfolio</title> <!-- Titre affiché dans l’onglet du navigateur -->
+
+    <!-- Lien vers les icônes Font Awesome pour les icônes utilisées dans la page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Lien vers Google Fonts pour la police Noto Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Lien vers le fichier CSS local -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header avec la navigation principale -->
+    <header class="header-accueil">
+        <nav class="navbar">
+            <a href="main_page.html">Accueil</a> <!-- Lien vers la page d’accueil -->
+            <img class="logo" src="img/logo.avif" alt="logo"> <!-- Logo du site -->
+            <a href="contact.html">Contact</a> <!-- Lien vers la page contact -->
+        </nav>
+
+        <!-- Menu déroulant supplémentaire -->
+        <nav class="dropdown">
+            <ul>
+                <li><a href="main_page.html">Portfolio</a></li> <!-- Lien vers la section portfolio -->
+                <li><a href="contact.html">Formulaire</a></li> <!-- Lien vers la page contact -->
+            </ul>
+        </nav>
+
+        <!-- Bloc titre principal de la page -->
+        <div class="main-title">
+            <h1>BREGE Malo</h1> <!-- Nom affiché -->
+            <p class="iim">IIM Digital School de Nantes</p> <!-- Nom de l’école -->
+            <p class="etd">Etudiant en 1ère année</p> <!-- Informations sur le cursus -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Titre principal de la section projets -->
+        <h1 class="main">Projets en année 1 à l'IIM</h1>
+
+        <!-- Slider 1 : projets 3D -->
+        <section class="slider-container slider-1">
+            <div class="slider">
+                <img src="img/Caroussel 1/DROIDEKA01.png" alt="Projet_01_3D">
+                <img src="img\Caroussel 1\DROIDEKA02.png" alt="Projet_02_3D">
+                <img src="img\Caroussel 1\scene_heroic_fantasy_modelisation_BREGE_MALO_A1_07-01-2026.png" alt="Projet_03_3D">
+                <img src="img\Caroussel 1\archi_int_BREGE_MALO_A1_07-01-2026.png" alt="Projet_04_3D">
+                <img src="img/Caroussel 1/DROIDEKA01.png" alt="Projet_01_3D">
+            </div>
+        </section>
+
+        <!-- Slider 2 : projets graphiques -->
+        <section class="slider-container slider-2">
+            <div class="slider">
+                <img src="img\Caroussel 2\COMICS_COVER01-PREMIERE_COUVERTURE.png" alt="Projet_01_GD">
+                <img src="img\Caroussel 2\COMICS_COVER01-QUATRIEME_COUVERTURE.png" alt="Projet_02_GD">
+                <img src="img\Caroussel 2\COMICS_COVER02-PREMIERE_COUVERTURE.png" alt="Projet_03_GD">
+                <img src="img/Caroussel 2/COMICS_COVER02-QUATRIEME_COUVERTURE.png" alt="Projet_04_GD">
+                <img src="img\Caroussel 2\COMICS_COVER01-PREMIERE_COUVERTURE.png" alt="Projet_01_GD">
+            </div>
+        </section>
+
+        <!-- Section "A propos de moi" et réseaux sociaux -->
+        <section class="moireseau">
+            <div class="moi">
+                <h1>A propos de moi</h1>
+                <p>Bonjour je m'appelle Malo BREGE et j'ai 21 ans... <!-- Présentation personnelle détaillée --> </p>
+            </div>
+
+            <div class="reseau">
+                <h1>Réseaux Sociaux</h1>
+                <!-- Liens vers différents profils sociaux / portfolios -->
+                <a href="https://www.youtube.com/@malobrege3821"><img src="img/Réseaux/youtube.png" class="img123" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/in/malo-brege-205792243/"><img src="img/Réseaux/Linkedin.png" class="img123" alt="Linkedin"></a>
+                <a href="https://github.com/repos?q=owner%3A%40me"><img src="img/Réseaux/github.png" class="img123" alt="Github"></a>
+                <a href="https://tracker.gg/valorant/profile/riot/EmpereurMalob%23SRFC/overview?platform=pc&playlist=competitive&season=aef237a0-494d-3a14-a1c8-ec8de84e309c"><img src="img/Réseaux/valo.png" class="img45" alt="Valorant Tracker"></a>
+                <a href="https://op.gg/lol/summoners/euw/EmpereurMalob-SRFC"><img src="img/Réseaux/opgg.png" class="img45" alt="LOL Tracker"></a>
+            </div>
+        </section>
+
+        <!-- Section compétences et CV / contact -->
+        <section class="compcvconta">
+            <div class="competences">
+                <h1>Compétences</h1>
+
+                <h2>Soft Skills</h2> <!-- Compétences personnelles -->
+                <li>Service et Rapport Client </li>
+                <li>Autonome et Responsable</li>
+                <li>Travail en équipe</li>
+                <li>Gestion Equipe</li>
+                <li>Gestion du temps</li>
+                <li>Management</li>
+
+                <h2>Hard Skills</h2> <!-- Compétences techniques -->
+                <li>LV1 : Anglais</li>
+                <li>Blender</li>
+                <li>HTML, CSS et JAVA</li>
+                <li>C++ et Python</li>
+                <li>Premier Pro, Illustrator et Photoshop</li>
+                <li>Visual Studio</li>
+                <li>Canva</li>
+                <li>Unity</li>
+            </div>
+
+            <!-- Boutons CV et contact -->
+            <div class="cvcontact">
+                <a class="button" href="img/CV Malo.pdf">Mon CV</a> <!-- Téléchargement du CV -->
+                <a class="button" href="contact.html"> Me Contacter</a> <!-- Lien vers formulaire de contact -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="navbar">
+            <a href="main_page.html">Accueil</a>
+            <img class="logo" src="img/logo.avif" alt="logo">
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+    <!-- Script JS pour interactivité / slider -->
+    <script src="main_page.js"></script>
+
+</body>
+</html>
